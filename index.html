@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>СтройБетонМаш — манипулятор Ман 12 т в Бресте. Перевозка грузов + продажа и доставка стройматериалов</title>
+<meta name="description" content="Кран-манипулятор Ман 12 т в Бресте: кузов 2.45×7.20 м, вылет стрелы 10 м, 1.5 т на 10 м. Перевозка и разгрузка грузов, продажа и доставка стройматериалов. Наличный и безналичный расчёт. ООО «СтройБетонМаш». Тел +375 44 510-83-13.">
+<script>window.__ok=0;</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Podkova:wght@400;500;600;700;800&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--sg:#22C55E;--sgH:#16A34A;--sgL:#6EE7A0;--sgT:rgba(34,197,94,.12);--ink:#121513;--ink2:#1A201B;--conc:#F2F1EC;--conc2:#E7E6DF;--mut:#7B7B70;--mut2:#56564D;--line:rgba(18,21,19,.12);--lined:rgba(242,241,236,.16);--disp:'Podkova',Georgia,serif;--sans:'PT Sans',system-ui,sans-serif}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:var(--sans);background:var(--conc);color:var(--ink);overflow-x:hidden;font-size:17px;line-height:1.62;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:var(--disp);font-weight:700;line-height:1.14}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+::selection{background:var(--sg);color:#fff}
+.wm{position:fixed;inset:0;z-index:9998;pointer-events:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='460' height='300'%3E%3Ctext x='40' y='150' font-size='26' fill='%234338ca' opacity='.10' font-family='monospace' transform='rotate(-24 40 150)'%3ESiteFast.by%3C/text%3E%3C/svg%3E")}
+.wbadge{position:fixed;right:14px;bottom:14px;z-index:9999;background:#4338ca;color:#fff;font:700 11px/1 var(--sans);padding:7px 10px;border-radius:6px;opacity:.85}
+.cur-dot,.cur-ring{display:none}
+@media(pointer:fine){.cur-dot{display:block;position:fixed;z-index:10000;width:7px;height:7px;border-radius:50%;background:var(--sgL);pointer-events:none;transform:translate(-50%,-50%)}.cur-ring{display:block;position:fixed;z-index:10000;width:36px;height:36px;border-radius:50%;border:1.5px solid rgba(34,197,94,.55);pointer-events:none;transform:translate(-50%,-50%);transition:width .25s,height .25s}.cur-ring.big{width:60px;height:60px}}
+.wrap{max-width:1220px;margin:0 auto;padding:0 28px}
+header{position:fixed;top:0;left:0;right:0;z-index:900;background:rgba(18,21,19,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--lined)}
+.hrow{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:0 28px;max-width:1220px;margin:0 auto;min-height:72px}
+.logo{display:flex;align-items:center;gap:12px;color:var(--conc);flex:none}
+.logo .hook{width:38px;height:38px;display:flex;align-items:center;justify-content:center}
+.logo .lg-t{font-family:var(--disp);font-size:18px;font-weight:800;white-space:nowrap}
+.logo .lg-t i{font-style:normal;color:var(--sgL)}
+.logo .lg-s{font-size:9px;letter-spacing:.26em;text-transform:uppercase;color:#8C8C80}
+nav.top{display:flex;gap:2px}
+nav.top a{font-size:12px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;padding:9px 11px;border-radius:8px;color:#BFBFB2;transition:.2s;white-space:nowrap}
+nav.top a:hover{color:var(--sgL)}
+.hcall{display:flex;gap:10px;align-items:center;flex:none}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;font-weight:700;font-size:13px;letter-spacing:.03em;padding:12px 22px;border-radius:999px;transition:.25s;cursor:pointer;border:none;font-family:var(--sans)}
+.btn-acc{background:var(--sg);color:#08240F}
+.btn-acc:hover{background:var(--sgH);color:#fff}
+.btn-ghost{border:1.5px solid rgba(242,241,236,.28);color:var(--conc)}
+.btn-ghost:hover{border-color:var(--sgL);color:var(--sgL)}
+.burger{display:none;background:none;border:1px solid var(--lined);border-radius:9px;padding:9px 10px;cursor:pointer}
+.burger span{display:block;width:20px;height:2px;background:var(--conc);margin:4px 0}
+.hero{min-height:100svh;display:flex;align-items:flex-end;padding:150px 0 60px;position:relative;overflow:hidden;background:var(--ink);color:var(--conc)}
+.hero .wrap{position:relative;z-index:2;width:100%}
+.hero::before{content:'';position:absolute;left:-140px;bottom:-160px;width:520px;height:520px;border-radius:50%;border:1.5px dashed rgba(34,197,94,.35);animation:spin 48s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.h-kick{display:inline-flex;align-items:center;gap:12px;font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:#CFCFC3;border:1px solid rgba(242,241,236,.25);border-radius:999px;padding:10px 18px;background:rgba(18,21,19,.4)}
+.h-kick i{width:8px;height:8px;border-radius:50%;background:var(--sgL);animation:blink 1.9s infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.25}}
+.hero h1{font-size:clamp(33px,6.2vw,84px);margin:26px 0 14px;max-width:950px}
+.hero h1 em{font-style:normal;color:var(--sgL)}
+.h-sub{font-size:19px;color:#CFCFC3;max-width:680px}
+.h-cta{display:flex;gap:14px;margin-top:36px;flex-wrap:wrap}
+.h-chips{display:flex;gap:10px;margin-top:32px;flex-wrap:wrap}
+.chip{font-size:12.5px;padding:9px 16px;border-radius:999px;border:1px solid rgba(34,197,94,.45);color:var(--sgL);background:rgba(34,197,94,.10)}
+.chip b{font-weight:700}
+.h-tel{margin-top:32px}
+.h-tel a{font-family:var(--disp);font-size:24px;color:var(--conc);border-bottom:1.5px solid rgba(110,231,160,.5);transition:.2s;font-weight:600}
+.h-tel a:hover{color:var(--sgL)}
+.marquee{overflow:hidden;border-top:1px solid var(--lined);border-bottom:1px solid var(--lined);padding:15px 0;background:var(--ink)}
+.mq-t{display:flex;width:max-content;animation:mq 36s linear infinite}
+.mq-t span{font-family:var(--disp);font-size:15px;letter-spacing:.08em;padding:0 26px;white-space:nowrap;color:#8C8C80;text-transform:uppercase}
+.mq-t span i{font-style:normal;color:var(--sgL);margin-left:26px}
+@keyframes mq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+section.blk{padding:100px 0}
+.blk.dark{background:var(--ink);color:var(--conc)}
+.kick{font-size:11px;letter-spacing:.32em;text-transform:uppercase;color:var(--sgH);margin-bottom:18px;display:flex;align-items:center;gap:12px;font-weight:700}
+.kick::before{content:'';width:42px;height:1px;background:var(--sg)}
+.blk.dark .kick{color:var(--sgL)}
+h2{font-size:clamp(27px,4.6vw,56px)}
+h2 em{font-style:normal;color:var(--sg)}
+.blk.dark h2 em{color:var(--sgL)}
+.lead{font-size:18px;color:#56564D;max-width:780px;margin-top:16px}
+.blk.dark .lead{color:#BFBFB2}
+/* два направления */
+.dirs{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:46px}
+.dir{background:#fff;border:1px solid var(--line);border-radius:20px;padding:34px 30px;position:relative;overflow:hidden;transition:transform .4s cubic-bezier(.16,1,.3,1),border-color .3s}
+.dir:hover{transform:translateY(-6px);border-color:rgba(34,197,94,.5)}
+.dir .d-num{position:absolute;right:18px;top:6px;font-family:var(--disp);font-size:88px;color:var(--sgT);font-weight:800}
+.dir h3{font-size:24px;margin-bottom:12px}
+.dir ul{list-style:none;margin-top:14px}
+.dir li{padding:7px 0 7px 26px;position:relative;font-size:15px;color:#3F3F37}
+.dir li::before{content:'';position:absolute;left:0;top:14px;width:14px;height:3px;background:var(--sg)}
+.dir .d-tel{display:inline-block;margin-top:16px;font-family:var(--disp);font-size:17px;color:var(--sgH);font-weight:600}
+/* wow */
+.wow{background:var(--ink2);border:1px solid var(--lined);border-radius:22px;padding:clamp(18px,3vw,40px);color:var(--conc);position:relative;overflow:hidden;margin-top:48px}
+.wow svg{width:100%;height:auto;display:block}
+.wtabs{display:flex;gap:8px;margin-bottom:16px;flex-wrap:wrap}
+.wtab{background:none;border:1.5px solid rgba(242,241,236,.2);color:#BFBFB2;font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:700;padding:9px 16px;border-radius:999px;cursor:pointer;transition:.25s;font-family:var(--sans)}
+.wtab:hover{border-color:rgba(110,231,160,.6)}
+.wtab.on{background:var(--sg);border-color:var(--sg);color:#08240F}
+.wow-cap{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;margin-top:12px;font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:#8C8C80}
+.wow-cap b{color:var(--sgL);font-weight:700}
+/* specs table */
+.tblwrap{overflow-x:auto;margin-top:40px;border:1px solid var(--line);border-radius:16px;background:#fff}
+table{width:100%;min-width:560px;border-collapse:collapse;font-size:15.5px}
+th,td{padding:15px 18px;text-align:left;border-bottom:1px solid var(--line)}
+th{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--sgH);font-weight:700;background:#FAFAF6}
+td:first-child{font-weight:700;width:44%}
+tr:last-child td{border-bottom:none}
+/* mats */
+.mats{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;margin-top:46px}
+.mat{background:#fff;border:1px solid var(--line);border-radius:18px;padding:26px 24px;transition:transform .4s cubic-bezier(.16,1,.3,1),border-color .3s}
+.mat:hover{transform:translateY(-5px);border-color:rgba(34,197,94,.5)}
+.mat .m-ic{width:46px;height:46px;border-radius:12px;background:var(--sgT);display:flex;align-items:center;justify-content:center;color:var(--sgH);margin-bottom:14px}
+.mat h3{font-size:17px;margin-bottom:6px}
+.mat p{font-size:14.5px;color:#7B7B70}
+.mnote{margin-top:26px;font-size:14px;color:#7B7B70;background:var(--sgT);border-left:3px solid var(--sg);padding:14px 18px;border-radius:0 12px 12px 0}
+.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:46px}
+.stp{background:var(--ink2);border:1px solid var(--lined);border-radius:18px;padding:26px 22px;transition:transform .4s cubic-bezier(.16,1,.3,1),border-color .3s}
+.stp:hover{transform:translateY(-5px);border-color:rgba(34,197,94,.55)}
+.stp .sn{font-family:var(--disp);font-size:40px;color:var(--sgL);font-weight:700}
+.stp h3{color:var(--conc);font-size:16px;margin:10px 0 8px}
+.stp p{font-size:14px;color:#9C9C90}
+.galer{display:grid;grid-template-columns:2fr 1fr;gap:14px;margin-top:44px}
+.gcell a{display:block;border-radius:16px;overflow:hidden;background:var(--ink2)}
+.gcell img{width:100%;object-fit:cover;transition:transform .6s cubic-bezier(.16,1,.3,1)}
+.gcell:hover img{transform:scale(1.04)}
+.gside{background:var(--ink2);border:1px solid var(--lined);border-radius:16px;padding:30px;display:flex;flex-direction:column;justify-content:center}
+.gside .gs-n{font-family:var(--disp);font-size:46px;color:var(--sgL);font-weight:700}
+.gside p{font-size:14.5px;color:#9C9C90;margin-top:6px}
+.faq{max-width:860px;margin:44px auto 0}
+.q{border-bottom:1px solid var(--line)}
+.q button{width:100%;background:none;border:none;text-align:left;padding:22px 4px;font-family:var(--sans);font-size:17px;font-weight:700;color:var(--ink);cursor:pointer;display:flex;justify-content:space-between;gap:16px;align-items:center}
+.q button::after{content:'+';font-size:24px;color:var(--sgH);transition:.3s;flex:none}
+.q.open button::after{transform:rotate(45deg)}
+.q .a{max-height:0;overflow:hidden;transition:max-height .45s cubic-bezier(.16,1,.3,1)}
+.q .a p{padding:0 4px 22px;color:#56564D;font-size:15.5px}
+.ccard{background:var(--ink2);border:1px solid var(--lined);border-radius:18px;padding:30px}
+.ccard .ctel{font-family:var(--disp);font-size:29px;display:block;color:var(--conc);transition:.2s;font-weight:600}
+.ccard .ctel:hover{color:var(--sgL)}
+.cgrid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:46px 0 40px}
+.frm{display:grid;gap:13px;max-width:620px}
+form label{font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:#9C9C90;display:block;margin-bottom:6px;font-weight:700}
+form input,form select,form textarea{width:100%;background:var(--ink2);border:1px solid var(--lined);border-radius:11px;padding:13px 15px;font-size:15.5px;font-family:var(--sans);color:var(--conc)}
+form input::placeholder,form textarea::placeholder{color:#8C8C80}
+form input:focus,form select:focus,form textarea:focus{outline:none;border-color:var(--sgL)}
+.ok-msg{display:none;background:rgba(34,197,94,.22);color:var(--sgL);border:1px solid rgba(110,231,160,.5);border-radius:11px;padding:13px 15px;font-size:14px;font-weight:700}
+footer{background:var(--ink);color:#8C8C80;padding:52px 0 130px;font-size:14px}
+.ft{display:flex;justify-content:space-between;gap:26px;flex-wrap:wrap;margin-bottom:26px}
+.ft .ft-logo{font-family:var(--disp);font-size:21px;color:var(--conc);font-weight:800}
+.ft .ft-logo i{font-style:normal;color:var(--sgL)}
+.fnav{display:flex;gap:20px;flex-wrap:wrap;max-width:560px}
+.fnav a{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#9C9C90}
+.fnav a:hover{color:var(--sgL)}
+.wm-line{border-top:1px solid var(--lined);padding-top:18px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:11.5px}
+.wa-fab{position:fixed;left:16px;bottom:16px;z-index:9990;display:flex;align-items:center;gap:10px;background:#25D366;color:#fff;font-weight:700;font-size:12.5px;padding:13px 20px;border-radius:999px;box-shadow:0 8px 24px rgba(0,0,0,.3)}
+.wa-fab:hover{background:#1FB95A}
+.lbbox{display:none;position:fixed;inset:0;z-index:9995;background:rgba(14,16,14,.92);align-items:center;justify-content:center;padding:26px}
+.lbbox.on{display:flex}
+.lbbox img{max-width:92vw;max-height:88vh;border-radius:10px}
+.lbbox button{position:absolute;top:20px;right:24px;background:none;border:none;color:var(--conc);font-size:38px;cursor:pointer;line-height:1}
+.fx{opacity:0;transform:translateY(26px)}
+body.js .fx{transition:opacity .8s cubic-bezier(.16,1,.3,1),transform .8s cubic-bezier(.16,1,.3,1)}
+body.js .fx.in{opacity:1;transform:none}
+.d1{transition-delay:.08s!important}.d2{transition-delay:.16s!important}.d3{transition-delay:.24s!important}
+@media(max-width:1060px){.steps{grid-template-columns:repeat(3,1fr)}.galer{grid-template-columns:1fr}}
+@media(max-width:900px){.hrow{min-height:62px}nav.top{position:absolute;top:100%;left:0;right:0;background:var(--ink);border-bottom:1px solid var(--lined);flex-direction:column;align-items:stretch;padding:12px 28px;display:none}nav.top.open{display:flex}nav.top a{padding:11px 0}.burger{display:block}.hcall .btn-ghost{display:none}.dirs{grid-template-columns:1fr}}
+@media(max-width:600px){.hcall{display:none}footer{padding-bottom:160px}section.blk{padding:66px 0}.steps{grid-template-columns:1fr}.h-tel a{font-size:20px}.cgrid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wm"></div>
+<div class="wbadge">МАКЕТ: SiteFast.by</div>
+<div class="cur-dot" id="cdot"></div><div class="cur-ring" id="cring"></div>
+<header>
+  <div class="hrow">
+    <a href="#" class="logo">
+      <div class="hook"><svg width="36" height="36" viewBox="0 0 36 36" fill="none"><path d="M8 4v16a8 8 0 0016 0" stroke="#6EE7A0" stroke-width="3" stroke-linecap="round"/><path d="M24 20l4 6" stroke="#22C55E" stroke-width="3" stroke-linecap="round"/><rect x="24" y="26" width="10" height="6" rx="2" fill="#22C55E"/></svg></div>
+      <div><div class="lg-t">Строй<span style="color:#BFBFB2">Бетон</span><i>Маш</i></div><div class="lg-s">манипулятор 12 т · стройматериалы · Брест</div></div>
+    </a>
+    <nav class="top" id="nav">
+      <a href="#dirs">Направления</a>
+      <a href="#crane">Манипулятор</a>
+      <a href="#mats">Материалы</a>
+      <a href="#specs">Техника</a>
+      <a href="#faq">Вопросы</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <div class="hcall">
+      <a href="tel:+375445108313" class="btn btn-ghost">+375 44 510-83-13</a>
+      <a href="#contacts" class="btn btn-acc">Заказать рейс</a>
+      <button class="burger" id="burger" aria-label="Меню"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main>
+<section class="hero">
+  <div class="wrap">
+    <span class="h-kick"><i></i>ООО «СтройБетонМаш» · Брест · с 2015 года</span>
+    <h1>Привезём стройматериалы и <em>разгрузим стрелой</em></h1>
+    <p class="h-sub">Кран-манипулятор Ман 12 т: перевозим грузы по Бресту и области, продаём и доставляем стройматериалы, подаём их на объект манипулятором.</p>
+    <div class="h-cta">
+      <a href="tel:+375445108313" class="btn btn-acc">Позвонить: +375 44 510-83-13</a>
+      <a href="#crane" class="btn btn-ghost">Что умеет машина</a>
+    </div>
+    <div class="h-chips">
+      <span class="chip">кузов <b>2.45 × 7.20 м</b></span>
+      <span class="chip">вылет стрелы <b>10 м</b></span>
+      <span class="chip"><b>1.5 т</b> на 10 м</span>
+      <span class="chip">нал и безнал</span>
+    </div>
+    <div class="h-tel"><a href="tel:+375445108313">+375 44 510-83-13</a></div>
+  </div>
+</section>
+<div class="marquee"><div class="mq-t">
+<span>МАН 12 Т <i>✦</i> КУЗОВ 2.45×7.20 М <i>✦</i> ВЫЛЕТ СТРЕЛЫ 10 М <i>✦</i> 1.5 Т НА 10 М <i>✦</i> НАЛ И БЕЗНАЛ <i>✦</i> ИНДИВИДУАЛЬНЫЙ ПОДХОД <i>✦</i> БРЕСТ <i>✦</i> </span>
+<span>МАН 12 Т <i>✦</i> КУЗОВ 2.45×7.20 М <i>✦</i> ВЫЛЕТ СТРЕЛЫ 10 М <i>✦</i> 1.5 Т НА 10 М <i>✦</i> НАЛ И БЕЗНАЛ <i>✦</i> ИНДИВИДУАЛЬНЫЙ ПОДХОД <i>✦</i> БРЕСТ <i>✦</i> </span>
+</div></div>
+
+<section class="blk" id="dirs">
+<div class="wrap">
+  <div class="kick">Направления</div>
+  <h2>Два дела одной машиной: <em>перевезти и привезти</em></h2>
+  <p class="lead">СтройБетонМаш — это услуги манипулятора и продажа стройматериалов с доставкой: можно заказать только рейс, только материал — или и то и другое сразу.</p>
+  <div class="dirs">
+    <div class="dir fx">
+      <div class="d-num">01</div>
+      <h3>Услуги манипулятора</h3>
+      <ul>
+        <li>перевозка грузов по Бресту и области</li>
+        <li>погрузка и разгрузка стрелой — без отдельного крана</li>
+        <li>подача материалов на участок, за забор, на объект</li>
+        <li>доставка габаритных и тяжёлых грузов до 12 т</li>
+      </ul>
+      <span class="d-tel">Ман 12 т · вылет 10 м · 1.5 т на 10 м</span>
+    </div>
+    <div class="dir fx d1">
+      <div class="d-num">02</div>
+      <h3>Продажа и доставка стройматериалов</h3>
+      <ul>
+        <li>сыпучие материалы с доставкой манипулятором</li>
+        <li>материал привозим и разгружаем в нужное место</li>
+        <li>без промежуточных перевозчиков — одна машина на всё</li>
+        <li>наличие, объёмы и цену уточняйте по телефону</li>
+      </ul>
+      <span class="d-tel">Материал + рейс = один заказ</span>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="blk dark" id="crane">
+<div class="wrap">
+  <div class="kick">Манипулятор</div>
+  <h2 style="color:var(--conc)">Стрела уходит на 10 метров — <em>и кладёт груз куда скажете</em></h2>
+  <p class="lead">Чем дальше вылет, тем меньше тоннаж: у борта машина поднимает максимум, на 10 метрах — 1.5 т. Это и показывает шкала ниже.</p>
+  <div class="wow" id="wowbox">
+    <div class="wtabs">
+      <button class="wtab on" data-w="gravel">Щебень</button>
+      <button class="wtab" data-w="sand">Песок</button>
+      <button class="wtab" data-w="blocks">Блоки</button>
+      <button class="wtab" data-w="bricks">Кирпич</button>
+    </div>
+    <svg viewBox="0 0 900 430" role="img" aria-label="Манипулятор подаёт груз на вылете до 10 метров">
+      <!-- земля -->
+      <rect x="0" y="392" width="900" height="12" fill="#1A1F1A"/>
+      <line x1="0" y1="392" x2="900" y2="392" stroke="#2A322A" stroke-width="2"/>
+      <!-- шкала вылета -->
+      <g id="scaleG"></g>
+      <text x="600" y="424" font-size="10.5" fill="#8C8C80" letter-spacing="2" font-family="PT Sans">ВЫЛЕТ СТРЕЛЫ, М</text>
+      <!-- машина: колёса, кабина, кузов -->
+      <g>
+        <rect x="40" y="330" width="360" height="34" rx="10" fill="#2A322A"/>
+        <circle cx="110" cy="372" r="26" fill="#121513" stroke="#3A443B" stroke-width="4"/>
+        <circle cx="110" cy="372" r="9" fill="#3A443B"/>
+        <circle cx="330" cy="372" r="26" fill="#121513" stroke="#3A443B" stroke-width="4"/>
+        <circle cx="330" cy="372" r="9" fill="#3A443B"/>
+        <rect x="150" y="296" width="70" height="44" rx="8" fill="#2A322A"/>
+        <rect x="160" y="304" width="50" height="18" rx="3" fill="#22C55E" opacity=".25"/>
+        <rect x="40" y="296" width="100" height="40" fill="#222823"/>
+        <text x="50" y="322" font-size="12" fill="#8C8C80" font-family="PT Sans">МАН · 12 т</text>
+      </g>
+      <!-- стрела: поворотная от точки (200,296) -->
+      <g id="boomG">
+        <g id="boomRot" transform="rotate(-40 200 296)">
+          <rect id="boom1" x="196" y="180" width="14" height="118" rx="6" fill="#3E4840"/>
+          <rect id="boom2" x="196" y="120" width="14" height="64" rx="6" fill="#525E53"/>
+          <rect id="boom3" x="196" y="70" width="14" height="52" rx="6" fill="#3E4840"/>
+          <rect x="190" y="64" width="26" height="10" rx="4" fill="#22C55E"/>
+        </g>
+        <circle cx="200" cy="296" r="16" fill="#2A322A" stroke="#3A443B" stroke-width="3"/>
+      </g>
+      <!-- трос и груз -->
+      <g id="hookG">
+        <line id="ropeL" x1="203" y1="76" x2="500" y2="200" stroke="#9C9C90" stroke-width="2"/>
+        <g id="loadG" transform="translate(500 200)"></g>
+      </g>
+      <!-- площадка приёма -->
+      <rect x="700" y="352" width="120" height="40" fill="#1E241E" stroke="#2A322A"/>
+      <text x="706" y="380" font-size="10.5" fill="#6B7568" font-family="PT Sans">ОБЪЕКТ</text>
+      <!-- счётчики -->
+      <text x="640" y="66" font-size="11" fill="#8C8C80" letter-spacing="3" font-family="PT Sans">ВЫЛЕТ</text>
+      <text id="wReach" x="638" y="106" font-size="44" fill="#F2F1EC" font-family="Podkova" font-weight="700">0 м</text>
+      <text x="640" y="146" font-size="11" fill="#8C8C80" letter-spacing="3" font-family="PT Sans">ГРУЗОПОДЪЁМНОСТЬ</text>
+      <text id="wCap" x="638" y="182" font-size="30" fill="#6EE7A0" font-family="Podkova" font-weight="700">12.0 т</text>
+      <text id="wPhase" x="640" y="226" font-size="12.5" fill="#9C9C90" letter-spacing="2" font-family="PT Sans">ЗАЦЕПКА ГРУЗА</text>
+      <!-- штамп -->
+      <g id="wStamp" opacity="0" transform="rotate(-5 420 66)">
+        <rect x="268" y="34" width="300" height="56" rx="10" fill="none" stroke="#6EE7A0" stroke-width="2.5"/>
+        <text x="418" y="59" font-size="14" fill="#6EE7A0" text-anchor="middle" letter-spacing="3" font-weight="700" font-family="PT Sans">ГРУЗ ПОДАН НА ОБЪЕКТ</text>
+        <text x="418" y="78" font-size="10" fill="#6EE7A0" text-anchor="middle" letter-spacing="2" font-family="PT Sans">СТРОЙБЕТОНМАШ · МАН 12 Т · БРЕСТ</text>
+      </g>
+    </svg>
+    <div class="wow-cap"><span>У борта — максимум тоннажа, на 10 м — 1.5 т</span><b>Цикл ~5.4 с</b></div>
+  </div>
+</div>
+</section>
+
+<section class="blk" id="mats">
+<div class="wrap">
+  <div class="kick">Материалы</div>
+  <h2>Что привозим <em>вместе с рейсом</em></h2>
+  <p class="lead">Материал приезжает на той же машине, что и разгружает его манипулятором: не нужно отдельно нанимать погрузку.</p>
+  <div class="mats">
+    <div class="mat fx"><div class="m-ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><circle cx="6" cy="8" r="2"/><circle cx="12" cy="6" r="2"/><circle cx="18" cy="9" r="2"/><circle cx="9" cy="14" r="2"/><circle cx="15" cy="15" r="2"/><circle cx="6" cy="19" r="2"/><circle cx="13" cy="20" r="2"/><circle cx="19" cy="18" r="2"/></svg></div><h3>Щебень</h3><p>Фракции под задачу: подушку под фундамент, дренаж, стяжку, отсыпку дорог.</p></div>
+    <div class="mat fx d1"><div class="m-ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 20c3-1 5-4 5-7 0-3 2-6 5-6s5 3 5 6c0 3 2 6 3 7"/><path d="M8 20h9"/></svg></div><h3>Песок и ПГС</h3><p>Строительный песок и песчано-гравийная смесь: подсыпка, бетон, благоустройство.</p></div>
+    <div class="mat fx d2"><div class="m-ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="7" width="18" height="5" rx="1"/><rect x="3" y="14" width="18" height="5" rx="1"/><path d="M8 7v12M16 7v12"/></svg></div><h3>Отсев и крошка</h3><p>Для дорожек, детских площадок, отсыпки и верхнего слоя парковок.</p></div>
+    <div class="mat fx"><div class="m-ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 16l9-10 9 10"/><path d="M3 20h18"/></svg></div><h3>Грунт и подсыпка</h3><p>Плодородный грунт, подъездные слои под благоустройство участка.</p></div>
+  </div>
+  <p class="mnote fx">Точный список материалов, фракции, наличие и стоимость — по телефону +375 44 510-83-13: расскажем, что есть в наличии прямо сейчас, и посчитаем рейс вместе.</p>
+</div>
+</section>
+
+<section class="blk dark" id="specs">
+<div class="wrap">
+  <div class="kick">Техника</div>
+  <h2 style="color:var(--conc)">Ман 12 т: <em>характеристики без секретов</em></h2>
+  <div class="tblwrap fx"><table>
+    <tr><th>Параметр</th><th>Значение</th></tr>
+    <tr><td>Автомобиль</td><td>Ман, кран-манипулятор</td></tr>
+    <tr><td>Грузоподъёмность машины</td><td>12 т</td></tr>
+    <tr><td>Кузов</td><td>2.45 × 7.20 м</td></tr>
+    <tr><td>Вылет стрелы</td><td>10 м</td></tr>
+    <tr><td>Грузоподъёмность на вылете 10 м</td><td>1.5 т</td></tr>
+    <tr><td>Расчёт</td><td>наличный и безналичный</td></tr>
+    <tr><td>Подход к клиенту</td><td>индивидуальный: под каждую задачу — своё решение</td></tr>
+  </table></div>
+  <div class="steps">
+    <div class="stp fx"><div class="sn">01</div><h3>Звонок</h3><p>Рассказываете задачу: что везём, откуда, куда, когда.</p></div>
+    <div class="stp fx d1"><div class="sn">02</div><h3>Расчёт</h3><p>Считаем рейс и материал, выбираем нал или безнал.</p></div>
+    <div class="stp fx d2"><div class="sn">03</div><h3>Погрузка</h3><p>Материал грузим и фиксируем — дорога без сюрпризов.</p></div>
+    <div class="stp fx d3"><div class="sn">04</div><h3>Рейс</h3><p>Идём по Бресту и области — от частного двора до стройки.</p></div>
+    <div class="stp fx"><div class="sn">05</div><h3>Разгрузка стрелой</h3><p>Манипулятор подаёт груз на место: за забор, к котловану, на объект.</p></div>
+  </div>
+</div>
+</section>
+<section class="blk" id="gallery">
+<div class="wrap">
+  <div class="kick">Фото из объявления</div>
+  <h2>Наш <em>Ман</em></h2>
+  <div class="galer">
+    <div class="gcell"><a href="img/man.jpg" data-lb><img src="img/man.jpg" alt="Кран-манипулятор Ман 12 т — фото из объявления" loading="lazy" style="aspect-ratio:920/690"></a></div>
+    <div class="gside">
+      <div class="gs-n">12 т</div>
+      <p>полная грузоподъёмность машины</p>
+      <div class="gs-n" style="margin-top:18px">10 м</div>
+      <p>вылет стрелы манипулятора</p>
+      <div class="gs-n" style="margin-top:18px">7.2 м</div>
+      <p>длина кузова под длинномерный груз</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="blk dark" id="faq" style="background:var(--ink)">
+<div class="wrap">
+  <div class="kick">Вопросы</div>
+  <h2 style="color:var(--conc)">Частые вопросы <em>о рейсах и материалах</em></h2>
+  <div class="faq">
+    <div class="q"><button>Сколько стоит рейс манипулятора?</button><div class="a"><p>Цена зависит от груза, расстояния и того, нужна ли работа стрелы. Позвоните — для каждого клиента подбираем индивидуальное решение и сразу называем цифры.</p></div></div>
+    <div class="q"><button>Можно ли купить у вас материал и сразу его привезти?</button><div class="a"><p>Да, это и есть основная схема: продаём стройматериалы и доставляем их своим манипулятором — он же и разгрузит на месте. Один звонок, одна машина, один расчёт.</p></div></div>
+    <div class="q"><button>Работаете с организациями по безналу?</button><div class="a"><p>Да: работаем как за наличный, так и за безналичный расчёт. Организациям — документы и удобный порядок оплаты.</p></div></div>
+    <div class="q"><button>Что может поднять стрела?</button><div class="a"><p>Вылет стрелы — 10 метров, грузоподъёмность на этом вылете — 1.5 т. У борта машина берёт существенно больше. Это позволяет подавать блоки, поддоны, ёмкости и металл прямо на объект.</p></div></div>
+    <div class="q"><button>Какие грузы везёте в кузове?</button><div class="a"><p>Кузов 2.45 × 7.20 м берёт длинномеры и габарит: металлоконструкции, древесину, оборудование, стройматериалы навалом и в поддонах — общая грузоподъёмность 12 т.</p></div></div>
+    <div class="q"><button>Работаете только в Бресте?</button><div class="a"><p>База — Брест. Рейсы по Брестской области согласуем по телефону: скажите, где объект, и предложим вариант.</p></div></div>
+  </div>
+</div>
+</section>
+
+<section class="blk" id="contacts">
+<div class="wrap">
+  <div class="kick">Контакты</div>
+  <h2>Одна машина решает всё: <em>звоните</em></h2>
+  <div class="cgrid">
+    <div class="ccard fx" style="background:var(--ink2);color:var(--conc)">
+      <div style="font-size:10.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--sgL);font-weight:700">Телефон · WhatsApp · Viber</div>
+      <a class="ctel" href="tel:+375445108313">+375 44 510-83-13</a>
+      <p style="font-size:13px;color:#9C9C90;margin-top:8px">Звоните — расскажем про материалы, рейс и цену</p>
+    </div>
+    <div class="ccard fx d1" style="background:var(--ink2);color:var(--conc)">
+      <div style="font-size:10.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--sgL);font-weight:700">Исполнитель</div>
+      <div class="ctel" style="font-family:var(--disp)">ООО «СтройБетонМаш»</div>
+      <p style="font-size:13px;color:#9C9C90;margin-top:8px">УНП 291962453 · г. Брест · манипулятор Ман 12 т</p>
+    </div>
+  </div>
+  <h3 style="font-size:22px;margin-bottom:22px">Заявка на рейс или материал</h3>
+  <form id="jform" novalidate>
+    <div class="frm" style="color:var(--conc)">
+      <div><label for="f-name">Ваше имя</label><input id="f-name" required placeholder="Как к вам обращаться"></div>
+      <div><label for="f-tel">Телефон</label><input id="f-tel" required placeholder="+375 __ ___-__-__"></div>
+      <div><label for="f-need">Что нужно</label><select id="f-need"><option>Только рейс манипулятора</option><option>Материал с доставкой</option><option>Материал + разгрузка стрелой</option><option>Перевозка груза</option><option>Ещё не знаю — посоветуйте</option></select></div>
+      <div><label for="f-pay">Расчёт</label><select id="f-pay"><option>Наличный</option><option>Безналичный (организация)</option></select></div>
+      <div><label for="f-msg">Задача</label><textarea id="f-msg" placeholder="Что везём или какой материал нужен, откуда и куда, город..."></textarea></div>
+      <button class="btn btn-acc" type="submit">Отправить заявку</button>
+      <div class="ok-msg" id="fok">Спасибо! Перезвоним и посчитаем рейс.</div>
+    </div>
+  </form>
+  <p style="margin-top:30px;font-size:13.5px;color:#7B7B70">ООО «СтройБетонМаш» · УНП 291962453 · г. Брест · манипулятор Ман 12 т · нал и безнал</p>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="wrap">
+<div class="ft">
+  <div>
+    <div class="ft-logo">Строй<span style="color:#8C8C80">Бетон</span><i>Маш</i></div>
+    <div style="font-size:12px;margin-top:8px;letter-spacing:.2em;text-transform:uppercase">манипулятор 12 т · стройматериалы · Брест</div>
+    <div style="margin-top:14px"><a href="tel:+375445108313" style="color:var(--sgL);font-family:var(--disp);font-size:17px;font-weight:600">+375 44 510-83-13</a></div>
+  </div>
+  <div class="fnav">
+    <a href="#dirs">Направления</a><a href="#crane">Манипулятор</a><a href="#mats">Материалы</a><a href="#specs">Техника</a><a href="#faq">Вопросы</a><a href="#contacts">Контакты</a>
+  </div>
+</div>
+<div class="wm-line">
+  <span>г. Брест · перевозка грузов · продажа и доставка стройматериалов</span>
+  <span>Макет подготовлен SiteFast.by</span>
+</div>
+</div>
+</footer>
+<a class="wa-fab" href="https://wa.me/375445108313" target="_blank" rel="noopener" aria-label="WhatsApp">
+<svg width="17" height="17" viewBox="0 0 24 24" fill="#fff"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm5.4 14.1c-.2.7-1.3 1.3-1.8 1.3-.5.1-1.1.1-1.8-.1a13 13 0 01-4.2-2.6 11 11 0 01-2.3-3.5c-.2-.6-.3-1.2-.1-1.7.2-.5.9-1.2 1.4-1.2.3 0 .6 0 .8.6l.7 1.6c.1.2 0 .5-.1.7l-.4.6c-.1.2-.2.3 0 .6.5.9 1.1 1.6 2 2.2.6.5 1.1.8 1.6 1 .3.1.5 0 .6-.1l.7-.8c.2-.2.4-.2.6-.1l1.6.8c.5.2.4.5.4.7z"/></svg>
+<span>WhatsApp</span>
+</a>
+<div class="lbbox" id="lbbox"><button id="lbclose" aria-label="Закрыть">×</button><img id="lbimg" alt=""></div>
+<script>
+document.body.classList.add('js');
+function scanReveal(){
+  var els=document.querySelectorAll('.fx:not(.in)'), vh=window.innerHeight||800;
+  for(var i=0;i<els.length;i++){
+    var r=els[i].getBoundingClientRect();
+    if(r.top<vh-40&&r.bottom>0) els[i].classList.add('in');
+  }
+}
+setInterval(scanReveal,400); scanReveal();
+document.getElementById('burger').addEventListener('click',function(){document.getElementById('nav').classList.toggle('open')});
+document.querySelectorAll('nav.top a').forEach(function(a){a.addEventListener('click',function(){document.getElementById('nav').classList.remove('open')})});
+(function(){
+  var c=document.getElementById('cdot'), r=document.getElementById('cring');
+  if(!c||!window.matchMedia('(pointer:fine)').matches) return;
+  var x=-100,y=-100,rx=-100,ry=-100;
+  document.addEventListener('mousemove',function(e){x=e.clientX;y=e.clientY;c.style.left=x+'px';c.style.top=y+'px';});
+  (function loop(){rx+=(x-rx)*.16;ry+=(y-ry)*.16;r.style.left=rx+'px';r.style.top=ry+'px';requestAnimationFrame(loop);})();
+  document.querySelectorAll('a,button,.gcell,.use,.mat,.q').forEach(function(el){
+    el.addEventListener('mouseenter',function(){r.classList.add('big')});
+    el.addEventListener('mouseleave',function(){r.classList.remove('big')});
+  });
+})();
+document.querySelectorAll('.q button').forEach(function(b){
+  b.addEventListener('click',function(){
+    var q=b.parentElement, a=q.querySelector('.a');
+    var open=q.classList.contains('open');
+    document.querySelectorAll('.q.open').forEach(function(o){o.classList.remove('open');o.querySelector('.a').style.maxHeight=0;});
+    if(!open){q.classList.add('open');a.style.maxHeight=a.scrollHeight+'px';}
+  });
+});
+/* ВАУ: шкала вылета и тоннажа */
+(function(){
+  var box=document.getElementById('wowbox'); if(!box) return;
+  var g=function(id){return document.getElementById(id)};
+  var boomG=g('boomG'), hookG=g('hookG'), loadG=g('loadG'), ropeL=g('ropeL'),
+      scaleG=g('scaleG'), reach=g('wReach'), cap=g('wCap'), phase=g('wPhase'),
+      stamp=g('wStamp');
+  var PX=50; /* 50 px = 1 м вылета */
+  /* строим стрелу из линий */
+  var NS='http://www.w3.org/2000/svg';
+  function mk(tag,attrs){var el=document.createElementNS(NS,tag);for(var k in attrs)el.setAttribute(k,attrs[k]);return el}
+  var boomA=mk('line',{stroke:'#3E4840','stroke-width':'13','stroke-linecap':'round'});
+  var boomB=mk('line',{stroke:'#525E53','stroke-width':'10','stroke-linecap':'round'});
+  var cyl=mk('line',{stroke:'#22C55E','stroke-width':'6','stroke-linecap':'round',opacity:'.85'});
+  var knuckle=mk('circle',{r:7,fill:'#3A443B'});
+  boomG.appendChild(boomA); boomG.appendChild(boomB); boomG.appendChild(cyl); boomG.appendChild(knuckle);
+  /* шкала вылета */
+  (function(){
+    var h='';
+    for(var m=0;m<=10;m++){
+      var x=200+m*PX;
+      h+='<line x1="'+x+'" y1="392" x2="'+x+'" y2="'+(m%5===0?378:384)+'" stroke="#3A443B" stroke-width="2"/>';
+      if(m%2===0) h+='<text x="'+x+'" y="372" font-size="10" fill="#6B7568" text-anchor="middle" font-family="PT Sans">'+m+'</text>';
+    }
+    scaleG.innerHTML=h;
+  })();
+  /* грузы по табам */
+  var LOADS={
+    gravel:'<ellipse cx="0" cy="18" rx="34" ry="10" fill="#2A322A"/><circle cx="-12" cy="8" r="4" fill="#5A5A52"/><circle cx="-4" cy="4" r="4" fill="#66655C"/><circle cx="4" cy="9" r="4" fill="#5A5A52"/><circle cx="12" cy="4" r="4" fill="#60605A"/><circle cx="-8" cy="-2" r="4" fill="#4E4E48"/><circle cx="6" cy="-1" r="4" fill="#55554E"/><circle cx="0" cy="12" r="4" fill="#66655C"/>',
+    sand:'<ellipse cx="0" cy="18" rx="36" ry="9" fill="#2A322A"/><path d="M-32 14 Q0 -16 32 14 Z" fill="#C2A96B"/><path d="M-20 12 Q0 -6 20 12 Z" fill="#D4BB80"/>',
+    blocks:'<rect x="-30" y="-8" width="60" height="26" fill="#2A322A"/><rect x="-28" y="-4" width="18" height="9" fill="#8E8E84"/><rect x="-8" y="-4" width="18" height="9" fill="#99998E"/><rect x="12" y="-4" width="16" height="9" fill="#88887E"/><rect x="-28" y="8" width="18" height="9" fill="#84847A"/><rect x="-8" y="8" width="18" height="9" fill="#929286"/><rect x="12" y="8" width="16" height="9" fill="#7E7E74"/>',
+    bricks:'<rect x="-30" y="-14" width="60" height="34" fill="#2A322A"/><g fill="#9A4A38">'+(function(){var h='';for(var r2=0;r2<3;r2++){for(var cB=0;cB<3;cB++){var ox=(r2%2)*-8;h+='<rect x="'+(-28+cB*19+ox)+'" y="'+(-12+r2*11)+'" width="17" height="9" rx="1"/>'}}return h})()+'</g>'
+  };
+  var MODE='gravel';
+  function setMode(m){
+    MODE=m;
+    loadG.innerHTML=LOADS[m];
+  }
+  setMode('gravel');
+  document.querySelectorAll('.wtab').forEach(function(t){
+    t.addEventListener('click',function(){
+      document.querySelectorAll('.wtab').forEach(function(x){x.classList.remove('on')});
+      t.classList.add('on');
+      setMode(t.getAttribute('data-w'));
+    });
+  });
+  var PH=[['ЗАЦЕПКА ГРУЗА',0,.18],['ПОДЪЁМ',.18,.35],['ПЕРЕНОС НА ВЫЛЕТ',.35,.8],['УКЛАДКА НА ОБЪЕКТ',.8,.95],['ГРУЗ ПОДАН',.95,1.01]];
+  var q=0,dir=1,inView=true,holdUntil=0,lastT=performance.now(),CYCLE=5400,HOLD=12000;
+  function clamp(v,a,b){return Math.min(1,Math.max(0,(v-a)/(b-a)))}
+  function ang(l){ return {x:200+l*Math.cos(-25*Math.PI/180), y:296+l*Math.sin(-25*Math.PI/180)}; }
+  function renderQ(v){
+    q=v;
+    var up=clamp(v,.18,.35);        /* подъём груза */
+    var ext=clamp(v,.35,.8);        /* выдвижение */
+    var down=clamp(v,.8,.95);       /* укладка */
+    var L=140+ext*412;
+    var P1={x:200+200*Math.cos(-25*Math.PI/180), y:296+200*Math.sin(-25*Math.PI/180)};
+    var P=ang(L);
+    boomA.setAttribute('x1',200); boomA.setAttribute('y1',296);
+    boomA.setAttribute('x2',P1.x); boomA.setAttribute('y2',P1.y);
+    boomB.setAttribute('x1',P1.x); boomB.setAttribute('y2',P1.y);
+    boomB.setAttribute('x2',P.x); boomB.setAttribute('y2',P.y);
+    cyl.setAttribute('x1',248); cyl.setAttribute('y1',330);
+    cyl.setAttribute('x2',200+70*Math.cos(-25*Math.PI/180)); cyl.setAttribute('y2',296+70*Math.sin(-25*Math.PI/180));
+    knuckle.setAttribute('cx',P1.x); knuckle.setAttribute('cy',P1.y);
+    /* груз: подъём у борта → перенос на крюке → укладка на площадку */
+    var gx, gy;
+    if(v<.35){ gx=300; gy=340-up*200; }
+    else {
+      gx=P.x; gy=140+down*195;
+    }
+    var hooked = v<.95;
+    ropeL.setAttribute('x1',P.x); ropeL.setAttribute('y1',P.y);
+    ropeL.setAttribute('x2',hooked?gx:gx); ropeL.setAttribute('y2',hooked?gy-24:gy-24);
+    ropeL.setAttribute('opacity', v<.95?1:0);
+    loadG.setAttribute('transform','translate('+gx+' '+(gy-22)+')');
+    /* счётчики */
+    var reachM=(P.x-200)/PX;
+    reach.textContent=reachM.toFixed(1).replace('.0','')+' м';
+    var capT=12.0-(reachM/10)*10.5;
+    cap.textContent=(capT>10?Math.round(capT):capT.toFixed(1))+' т';
+    for(var p=0;p<PH.length;p++){ if(v>=PH[p][1]&&v<PH[p][2]){phase.textContent=PH[p][0];break;} }
+    stamp.setAttribute('opacity', v>.955?1:0);
+  }
+  function tick(t){
+    var dt=t-lastT; lastT=t;
+    if(inView&&t>holdUntil){
+      q+=dir*dt/CYCLE;
+      if(q>=1){q=1;dir=-1;holdUntil=t+HOLD;}
+      else if(q<=0){q=0;dir=1;}
+      renderQ(q);
+    }
+    requestAnimationFrame(tick);
+  }
+  renderQ(0); requestAnimationFrame(tick);
+  setInterval(function(){
+    var r=box.getBoundingClientRect();
+    inView=(r.top<(window.innerHeight||800)-40&&r.bottom>40);
+  },500);
+  window.__wow={renderQ:renderQ,state:function(){return {q:q.toFixed(2),reach:reach.textContent,cap:cap.textContent,stamp:stamp.getAttribute('opacity'),mode:MODE}}};
+})();
+(function(){
+  var lb=document.getElementById('lbbox'), im=document.getElementById('lbimg');
+  document.addEventListener('click',function(e){
+    var a=e.target.closest('a[data-lb]');
+    if(a){e.preventDefault(); im.src=a.getAttribute('href'); lb.classList.add('on');}
+  });
+  document.getElementById('lbclose').addEventListener('click',function(){lb.classList.remove('on')});
+  lb.addEventListener('click',function(e){if(e.target===lb)lb.classList.remove('on')});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')lb.classList.remove('on')});
+})();
+(function(){
+  var f=document.getElementById('jform'); if(!f) return;
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    var ok=true;
+    ['f-name','f-tel'].forEach(function(id){
+      var el=document.getElementById(id);
+      if(!el.value.trim()){ok=false;el.style.borderColor='#D05A5A'}else{el.style.borderColor=''}
+    });
+    if(!ok) return;
+    document.getElementById('fok').style.display='block';
+    f.reset();
+  });
+})();
+</script>
+<script>window.__ok=1;</script>
+</body>
+</html>
